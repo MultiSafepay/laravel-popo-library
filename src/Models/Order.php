@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Multisafepay\Models;
 
 use CastModels\Model;
-use Illuminate\Support\Collection;
 
 class Order extends Model
 {
@@ -20,12 +19,12 @@ class Order extends Model
     public Delivery $delivery;
     public CheckoutOptions $checkout_options;
     public ShoppingCart $shopping_cart;
-    /** \Multisafepay\Model\CustomField */
-    public Collection $custom_fields;
+    /** \Multisafepay\Models\CustomField */
+    public array $custom_fields;
     public Affiliate $affiliate;
     public SecondChance $second_chance;
-    public int $days_active = 0;
-    public int $seconds_active = 0;
+    public int $days_active;
+    public int $seconds_active;
     public string $var1;
     public string $var2;
     public string $var3;
@@ -39,10 +38,10 @@ class Order extends Model
     public string $financial_status;
     public string $fastcheckout;
     public string $modified;
-    /** \Multisafepay\Model\Cost */
-    public Collection $costs;
-    /** \Multisafepay\Model\RelatedTransaction */
-    public Collection $related_transactions;
-    /** \Multisafepay\Model\PaymentMethod */
-    public Collection $payment_methods;
+    /** \Tests\Feature\Model\Cost */
+    public array $costs;
+    /** \Tests\Feature\Model\RelatedTransaction */
+    public array $related_transactions;
+    /** \Tests\Feature\Model\PaymentMethod */
+    public array $payment_methods;
 }

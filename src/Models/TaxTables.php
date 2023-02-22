@@ -9,4 +9,6 @@ use CastModels\Model;
 class TaxTables extends Model
 {
     public TaxTableSelector $default;
+    /** \Multisafepay\Models\TaxItem */
+    public array $alternate;
 }

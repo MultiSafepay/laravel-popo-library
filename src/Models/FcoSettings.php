@@ -11,8 +11,8 @@ class FcoSettings extends Model
     public string $redirect_mode;
     public Disabled $coupons;
     public Disabled $cart;
-    public Disabled $shipping;
+    public Shipping $shipping;
     public string $issuers_display_mode;
-    public Enabled $checkout;
+    public FcoSettingsCheckout $checkout;
     public bool $group_cards;
 }

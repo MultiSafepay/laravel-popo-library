@@ -6,7 +6,7 @@ namespace Multisafepay\Models;
 
 use CastModels\Model;
 
-class Shipping extends Model
+class FcoSettingsCheckout extends Model
 {
-    public Required $address;
+    public Enabled $customer;
 }

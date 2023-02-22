@@ -13,6 +13,6 @@ class PaymentOptions extends Model
     public string $feed_url;
     public string $redirect_url;
     public string $cancel_url;
-    public string $close_window;
+    public bool $close_window;
     public Settings $settings;
 }

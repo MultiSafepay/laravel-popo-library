@@ -6,7 +6,8 @@ namespace Multisafepay\Models;
 
 use CastModels\Model;
 
-class Shipping extends Model
+class TaxRule extends Model
 {
-    public Required $address;
+    public float $rate;
+    public string $country;
 }

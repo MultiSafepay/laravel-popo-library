@@ -5,14 +5,13 @@ declare(strict_types=1);
 namespace Multisafepay\Models;
 
 use CastModels\Model;
-use Illuminate\Support\Collection;
 
 class RelatedTransaction extends Model
 {
     public int $amount;
 
-    /** \Multisafepay\Model\Cost */
-    public Collection $costs;
+    /** \Tests\Feature\Model\Cost */
+    public array $costs;
     public string $created;
     public string $currency;
     public string $description;
